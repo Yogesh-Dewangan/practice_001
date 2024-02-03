@@ -1,0 +1,113 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+main {
+  /* padding: 10%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  flex-direction: column;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+.range-container {
+  margin-bottom: 12px;
+}
+
+.label-text {
+  display: inline-block;
+  width: 50px;
+  font-size: 18px;
+}
+
+.num-input {
+  padding: 4px 8px;
+  font-size: 16px;
+}
+
+.detail-btn-container {
+  text-align: center;
+}
+
+.details-btn {
+  padding: 4px 30px;
+  border-radius: 20px;
+  background-color: #32cd32;
+  border-color: #32cd32;
+  color: #fff;
+  font-size: 20px;
+}
+
+.details-btn:disabled {
+  opacity: 0.5;
+}
+
+.popover {
+  z-index: 1;
+  background-color: #ddd;
+  position: absolute;
+  padding: 20px;
+  padding-top: 0px;
+  max-height: 80vh;
+  overflow-y: scroll;
+  box-shadow: 0px 0px 2px 4px #eee;
+  border-radius: 8px;
+}
+
+.popover::-webkit-scrollbar {
+  width: 4px;
+}
+
+.popover::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.general-table-div {
+  margin-right: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 2px 6px;
+  text-align: center;
+}
+
+.close-popover {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  font-size: 20px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #f00;
+  color: #fff;
+}
+
+.error {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 4px;
+  color: red;
+}

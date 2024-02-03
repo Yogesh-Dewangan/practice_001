@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konnect Assessment</title>
+    <link rel="stylesheet" type="text/css" href="/src/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Find Prime Number</h1>
+      <section class="card">
+        <div class="range-container">
+          <label for="starting-num" class="label-text">From</label>
+          <input
+            type="number"
+            placeholder="Enter starting point"
+            id="starting-num"
+            class="num-input"
+          />
+        </div>
+        <div class="range-container">
+          <label for="ending-num" class="label-text">To</label>
+          <input
+            type="number"
+            placeholder="Enter end point"
+            id="ending-num"
+            class="num-input"
+          />
+          <div class="error">End point must be greater than starting point</div>
+        </div>
+        <div class="detail-btn-container">
+          <button class="details-btn">Details</button>
+        </div>
+      </section>
+
+      <section class="popover">
+        <span class="close-popover">&#10006; </span>
+        <div class="general-table-div">
+          <h4>Table: 2B</h4>
+          <table class="general-table">
+            <thead>
+              <tr>
+                <th>Number</th>
+                <th>Result</th>
+                <th>Time (in ms)</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+        <div class="prime-table-div">
+          <h4>Table: 2C</h4>
+          <table class="prime-table">
+            <thead>
+              <tr>
+                <th>Number</th>
+                <th>Time (in ms)</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="/src/script.js"></script>
+  </body>
+</html>
