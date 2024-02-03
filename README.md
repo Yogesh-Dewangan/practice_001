@@ -1,2 +1,3 @@
 # konnect_assessment
-for job perpose
+
+Only for job perpose (with me and konnect)
